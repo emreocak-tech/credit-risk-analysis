@@ -161,7 +161,7 @@ class ShowImage(AbstractShowImage):
         model_define=Model()
         best_model=model_define.func_model(new_customer=new_customer)
         plt.figure(figsize=(20,10))
-        plot_tree(best_model[1],feature_names=x.columns,class_names=['Onaylanmadı', 'Onaylandı'],filled=True,fontsize=10,impurity=True,max_depth=2)
+        plot_tree(best_model[1],feature_names=x.columns.tolist(),class_names=['Onaylanmadı', 'Onaylandı'],filled=True,fontsize=10,impurity=True,max_depth=2)
         return plt.gcf()
 
 try:
