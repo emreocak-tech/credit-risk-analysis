@@ -1,4 +1,3 @@
-### python -m streamlit run ui.py
 import pandas as pd
 import streamlit as st
 from tree_model import Model
